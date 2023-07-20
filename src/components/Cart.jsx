@@ -160,11 +160,6 @@ const Cart = () => {
                                         <td data-th="Subtotal" className="text-center">
                                             ${subtotalMap[product.productId] * product.productPrice}
                                         </td>
-                                        <td className="actions" data-th="">
-                                            <button className="btn btn-danger btn-sm">
-                                                <i className="fa fa-trash-o"></i>
-                                            </button>
-                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
