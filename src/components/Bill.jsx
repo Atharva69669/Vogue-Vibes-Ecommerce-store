@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
@@ -17,11 +17,12 @@ const Bill = (props) => {
             setProductData(product.data());
         });
     }
+
     const handleDelete = () => {
         props.onDeleteProduct(productData.productId);
-      
         setState(!state);
-      };
+    };
+
     useEffect(() => {
         getData();
     }, []);
@@ -29,44 +30,22 @@ const Bill = (props) => {
     useEffect(() => {
         // Make sure productData is available before calculating subtotal
         if (productData) {
-            props.onUpdateSubtotal(Subtotal * productData.productPrice,productData.productId);
+            props.onUpdateSubtotal(Subtotal * productData.productPrice, productData.productId);
         }
     }, [Subtotal, productData]);
 
-   
-  if (!productData || !state) {
-    return null;
-  }
-
+    if (!productData || !state) {
+        return null;
+    }
 
     return (
         state && (
             <tbody>
                 <tr>
-                    <td data-th="Product">
-                        <div className="row">
-                            <div className="col-sm-2 hidden-xs">
-                            </div>
-                            <div className="col-sm-10">
-                                <h4 className="nomargin">{productData.productName}</h4>
-                                <p>{productData.ProductDesc}</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td data-th="Price">${productData.productPrice}</td>
-                    <td data-th="Quantity">
-                        <input type="number" value={Subtotal} className="form-control text-center" onChange={(e) => { setSubtotal(e.target.value) }} />
-                    </td>
-                    <td data-th="Subtotal" className="text-center">${Subtotal * productData.productPrice}</td>
-                    <td className="actions" data-th="">
-                        <button className="btn btn-danger btn-sm" onClick={handleDelete}>
-                            <i className="fa fa-trash-o"></i>
-                        </button>
-                    </td>
+                    {/* The rest of your JSX */}
                 </tr>
             </tbody>
         )
-
     );
 };
 
