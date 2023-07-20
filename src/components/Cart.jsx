@@ -14,6 +14,7 @@ const Cart = () => {
     const [subtotalMap, setSubtotalMap] = useState({}); 
     const [total, setTotal] = useState(0);
 
+   useEffect(() => {
     async function getData(idp) {
         const q = query(collectionRef, where('productId', '==', idp));
         const docSnap = await getDocs(q);
@@ -25,14 +26,13 @@ const Cart = () => {
         }));
     }
 
-    useEffect(() => {
-        for (let id in cartItems) {
-            if (cartItems[id].quantity !== 0) {
-                const idp = parseInt(id, 10);
-                getData(idp);
-            }
+    for (let id in cartItems) {
+        if (cartItems[id].quantity !== 0) {
+            const idp = parseInt(id, 10);
+            getData(idp);
         }
-    }, [cartItems,getData]);
+    }
+}, [cartItems]);
 
     const handleSubtotalChange = (idp, value) => {
         setSubtotalMap((prevMap) => ({
