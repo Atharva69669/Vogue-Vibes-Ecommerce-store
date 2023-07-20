@@ -25,12 +25,6 @@ const Home = () => {
                             <p>Embrace Your Unique Style: Discover the Fashion Oasis.</p>
                         </div>
                         <button><Link to='/shop'>SHOP NOW</Link><i className='bx bx-right-arrow-alt'></i></button>
-                        <div className="home_social_icons">
-                            <a href="#"><i className='bx bxl-facebook'></i></a>
-                            <a href="#"><i className='bx bxl-twitter'></i></a>
-                            <a href="#"><i className='bx bxl-pinterest'></i></a>
-                            <a href="#"><i className='bx bxl-instagram'></i></a>
-                        </div>
                     </div>
                 </div>
             </section>
