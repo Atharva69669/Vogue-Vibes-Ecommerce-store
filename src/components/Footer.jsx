@@ -35,17 +35,17 @@ const Footer = () => {
                                 </div>
                                 <div className="content_2">
                                     <h4>SHOPPING</h4>
-                                    <a href="#">Clothing Store</a>
-                                    <a href="#">Trending Shoes</a>
-                                    <a href="#">Accessories</a>
-                                    <a href="#">Sale</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Clothing Store</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Trending Shoes</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Accessories</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Sale</a>
                                 </div>
                                 <div className="content_3">
                                     <h4>SHOPPING</h4>
-                                    <a href="#">Contact Us</a>
-                                    <a href="#" target="_blank">Payment Method</a>
-                                    <a href="#" target="_blank">Delivery</a>
-                                    <a href="#" target="_blank">Return and Exchange</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Contact Us</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Payment Method</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Delivery</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Return and Exchange</a>
                                 </div>
                                 <div className="content_4">
                                     <h4>NEWSLETTER</h4>
