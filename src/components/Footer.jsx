@@ -43,9 +43,9 @@ const Footer = () => {
                                 <div className="content_3">
                                     <h4>SHOPPING</h4>
                                     <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Contact Us</a>
-                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Payment Method</a>
-                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Delivery</a>
-                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" target="_blank">Return and Exchange</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store" >Payment Method</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Delivery</a>
+                                    <a href="https://github.com/Atharva69669/Vogue-Vibes-Ecommerce-store">Return and Exchange</a>
                                 </div>
                                 <div className="content_4">
                                     <h4>NEWSLETTER</h4>
