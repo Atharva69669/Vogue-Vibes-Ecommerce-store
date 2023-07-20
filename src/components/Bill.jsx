@@ -40,6 +40,7 @@ const Bill = (props) => {
 
 
 
+
     return(
         state && 
             <tbody>
