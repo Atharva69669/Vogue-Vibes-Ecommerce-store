@@ -32,7 +32,7 @@ const Cart = () => {
             getData(idp);
         }
     }
-}, [cartItems,collectionRef]);
+}, [cartItems]);
 
     const handleSubtotalChange = (idp, value) => {
         setSubtotalMap((prevMap) => ({
