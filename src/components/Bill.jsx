@@ -24,7 +24,7 @@ const Bill = (props) => {
       };
     useEffect(() => {
         getData();
-    }, []);
+    }, [getData]);
 
     useEffect(() => {
         // Make sure productData is available before calculating subtotal
