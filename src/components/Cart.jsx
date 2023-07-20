@@ -32,7 +32,7 @@ const Cart = () => {
             getData(idp);
         }
     }
-});
+},[]);
 
     const handleSubtotalChange = (idp, value) => {
         setSubtotalMap((prevMap) => ({
