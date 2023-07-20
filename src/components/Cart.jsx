@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  let total=0;
   const [prices,setPrices]=useState({});
   const [totalSubtotal, setTotalSubtotal] = useState(0);
   const handleSubtotalChange = (subtotal, id) => {
@@ -39,7 +38,7 @@ const Cart = () => {
   const { cartItems } = useContext(ShopContext);
   let billComponents = []
   for (let id in cartItems) {
-    if (cartItems[id].quantity != 0) {
+    if (cartItems[id].quantity !== 0) {
       billComponents.push({
         pro_id: id,
         category: cartItems[id].category,
