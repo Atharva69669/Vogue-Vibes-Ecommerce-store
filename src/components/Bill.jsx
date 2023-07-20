@@ -16,6 +16,7 @@ const Bill = (props) => {
         const docSnap = await getDocs(q);
         docSnap.forEach((product) => {
             setProductData(product.data());
+            console.log(product.data());
         });
     }, [pro_id]);
 
