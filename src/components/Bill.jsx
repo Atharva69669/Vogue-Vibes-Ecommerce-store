@@ -32,14 +32,11 @@ const Bill = (props) => {
         if (productData) {
             props.onUpdateSubtotal(Subtotal * productData.productPrice, productData.productId);
         }
-    }, [Subtotal, productData]);
+    }, [Subtotal, productData, props]); // Add 'props' to the dependency array
 
     if (!productData || !state) {
         return null;
     }
-
-
-
 
     return(
         state && 
