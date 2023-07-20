@@ -1,0 +1,9 @@
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    height: 100vh;
+}
