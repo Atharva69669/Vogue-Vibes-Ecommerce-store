@@ -6,7 +6,6 @@ const Bill = (props) => {
     const { pro_id, onDeleteProduct, onUpdateSubtotal } = props;
 
     const [productData, setProductData] = useState(null);
-    const [Subtotal, setSubtotal] = useState(1);
     const [state, setState] = useState(true);
 
     async function getData() {
@@ -19,14 +18,12 @@ const Bill = (props) => {
         });
     }
 
-    const handleDelete = () => {
-        onDeleteProduct(productData.productId);
-        setState(!state);
-    };
-
     useEffect(() => {
-        getData();
-    }, []);
+        async function fetchData() {
+            await getData();
+        }
+        fetchData();
+    }, [getData]);
 
     useEffect(() => {
         // Make sure productData is available before calculating subtotal
