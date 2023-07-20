@@ -6,7 +6,6 @@ import Women from "./components/Women";
 import Kids from "./components/Kids";
 import Cart from "./components/Cart";
 import ShopNow from "./components/ShopNow";
-import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
