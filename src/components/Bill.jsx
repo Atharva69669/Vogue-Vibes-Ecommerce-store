@@ -40,7 +40,7 @@ const Bill = (props) => {
         return null;
     }
 
-    return (
+    return 
         state && (
            <tbody>
                 <tr>
@@ -67,7 +67,6 @@ const Bill = (props) => {
                 </tr>
             </tbody>
         )
-    );
 };
 
 export default Bill;
