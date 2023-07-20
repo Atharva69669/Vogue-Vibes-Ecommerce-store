@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const { cartItems } = useContext(ShopContext);
-    const collectionRef = collection(db, 'Database');
+    
 
     const [items, setItems] = useState([]);
     const [checkout, setCheckout] = useState(false);
@@ -16,6 +16,7 @@ const Cart = () => {
 
    useEffect(() => {
     async function getData(idp) {
+        const collectionRef = collection(db, 'Database');
         const q = query(collectionRef, where('productId', '==', idp));
         const docSnap = await getDocs(q);
         const data = docSnap.docs.map((doc) => doc.data());
