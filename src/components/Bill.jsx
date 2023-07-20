@@ -3,40 +3,41 @@ import { db } from '../firebase';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 const Bill = (props) => {
-
     const [productData, setProductData] = useState(null);
     const [Subtotal, setSubtotal] = useState(1);
     const [state, setState] = useState(true);
 
-    async function getData() {
+    async function getData(id) {
         const collectionRef = collection(db, "Database");
-        const id = parseInt(props.props.pro_id, 10);
         const q = query(collectionRef, where("productId", "==", id));
         const docSnap = await getDocs(q);
         docSnap.forEach((product) => {
             setProductData(product.data());
         });
     }
+
     const handleDelete = () => {
         props.onDeleteProduct(productData.productId);
-      
         setState(!state);
-      };
+    };
+
+    const { pro_id } = props; // Destructure the specific prop used in useEffect
     useEffect(() => {
-        getData();
-    }, []);
+        const id = parseInt(pro_id, 10); // Use the specific prop inside useEffect
+        getData(id); // Pass it to getData if needed
+    }, [pro_id]); // Add it to the dependency array
 
     useEffect(() => {
         // Make sure productData is available before calculating subtotal
         if (productData) {
-            props.onUpdateSubtotal(Subtotal * productData.productPrice,productData.productId);
+            props.onUpdateSubtotal(Subtotal * productData.productPrice, productData.productId);
         }
-    }, [Subtotal, productData,]);
+    }, [Subtotal, productData]);
 
-   
-  if (!productData || !state) {
-    return null;
-  }
+    if (!productData || !state) {
+        return null;
+    }
+
 
 
     return(
