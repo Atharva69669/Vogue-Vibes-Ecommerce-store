@@ -40,7 +40,8 @@ const Bill = (props) => {
         return null;
     }
 
-   return state && (
+   return( 
+       state && 
     <tbody>
         <tr>
             <td data-th="Product">
