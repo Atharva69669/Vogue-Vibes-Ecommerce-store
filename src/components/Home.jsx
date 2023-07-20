@@ -17,7 +17,7 @@ const Home = () => {
             <section id="home">
                 <div className="home_page ">
                     <div className="home_img ">
-                        <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img " />
+                        <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shopify" />
                     </div>
                     <div className="home_txt ">
                         <h2>FLAT<br />40% OFF</h2>
@@ -41,28 +41,28 @@ const Home = () => {
             <div className="info">
 
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"  alt="image"/>
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"  alt="clothes"/>
 
                     <h3>Express Delivery</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png" alt="image" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png" alt="j=hats" />
 
                     <h3>Best Quality</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png" alt="image"/>
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png" alt="undies"/>
 
                     <h3>Best Offers</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png" alt="image" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png" alt="trousers" />
 
                     <h3>Secure Payments</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
