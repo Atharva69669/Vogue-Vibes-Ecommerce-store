@@ -41,28 +41,28 @@ const Home = () => {
             <div className="info">
 
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"  alt="image"/>
 
                     <h3>Express Delivery</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png" alt="image" />
 
                     <h3>Best Quality</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png" alt="image"/>
 
                     <h3>Best Offers</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                 </div>
                 <div className="info-section">
-                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png" />
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png" alt="image" />
 
                     <h3>Secure Payments</h3>
                     <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
