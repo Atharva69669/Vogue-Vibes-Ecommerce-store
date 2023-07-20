@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/navbar.css";
 import { Link } from 'react-router-dom'
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [signIn, setSignIn] = useState(false);
